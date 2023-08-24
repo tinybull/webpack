@@ -1,0 +1,19 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dotenv": "webpack --config build/webpack.dev.config.js --progress",
+    "build:crossenv": "cross-env NODE_ENV=dev NPM_ENV=webpack webpack --config build/webpack.dev.config.js --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv-webpack": "^8.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
